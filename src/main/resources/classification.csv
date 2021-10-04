@@ -1,0 +1,11 @@
+underlying,underlying.type,callOrPut,rate,notional,index,expiration,targetType
+,,,not null,not null,,not null,FixedRateBond
+,,,,not null,not null,not null,FloatingRateBond
+,,,,not null,,not null,ZeroCouponeBond
+,,,,not null,,,FallbackBond
+not null,'Asian',,,,,,AsianOption
+not null,'American',,,,,,AmericanOption
+not null,'European',,,,,,EuropeanOption
+not null,"not ['Asian', 'American', 'European']",,,,,,Future
+,,"['Call', 'Put']",,,,,FallbackOption
+,,,,,,,Stock
